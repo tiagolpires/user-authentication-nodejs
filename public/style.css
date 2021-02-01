@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    background-color: #121214;
+    color: #ffffff;
+}
+.container{
+    display: flex;
+}
+.main-image{
+    width: 50%;
+    height: 100vh;
+    background-image: url('/images/night.jpg');
+    background-size: cover;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.form-container{
+    width: 90%;
+   max-width: 400px;
+}
+.form-container h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #217EA8;
+}
+.dark-input{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.dark-input label{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+.dark-input input{
+    outline: none;
+    border: none;
+    background-color: #202024;
+    border-radius: 20px;
+    padding: 8px 20px;
+    color: #ffffff;
+    width: 80%;
+}
+.form-container button{
+    padding: 8px 60px;
+    border: none;
+    background-color: #217EA8;
+    color: #ffffff;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 40px;
+}
+.info-container{
+    width: 80%;
+    background-color: #202024;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.info-container h2{
+    margin: 20px 0;
+    color: #81ff96;
+}
+.info-container span{
+    color: #95deff;
+}
+a{
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+.error-message{
+    padding: 5px 20px;
+    background-color: #ca1d1d;
+    width: 80%;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+@media(max-width: 500px){
+    .main-image{
+        display: none;
+    }
+    .container{
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .content{
+        width: 100%;
+    }
+    .form-container{
+        max-width: none;
+    }
+}

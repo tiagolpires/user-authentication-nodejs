@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+    <section class="container">
+        <div class="main-image">
+        </div>
+        <div class="content">
+            <div class="form-container">
+              <h1>Login</h1>
+              <% if(message !== '') { %> 
+                <div class="error-message">
+                  <span><%= message %></span>          
+                </div>
+              <% } %> 
+              <form action="/" method="POST">
+                <div class="dark-input">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" required>
+                </div>
+                <div class="dark-input">
+                  <label for="password">Password</label>
+                  <input type="password" name="password" required>
+                </div>
+                <button>Login</button>
+              </form>
+              <a href="/register">Register</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
