@@ -26,8 +26,4 @@ mongoose.connect(
 
 app.use('/', routes)
 
-app.get('/', (req, res) => {
-    res.send('Deu bom')
-})
-
 app.listen(3001)
